@@ -15,7 +15,9 @@
 #define SCU_LPC_GROUP_BLOCK_SIZE (32 * sizeof(uint32_t))
 
 // The base address of the SCU register bank.
+#ifndef SCU_BASE
 #define SCU_BASE                 (0x40086000UL)
+#endif
 
 
 /**
